@@ -3,14 +3,15 @@ import CredentialsProvider from "next-auth/providers/credentials";
 import { prisma } from "./prisma";
 import bcrypt from "bcryptjs";
 import { z } from "zod";
+import type { AuthOptions, SessionStrategy } from "next-auth";
 
-export const authOptions = {
+export const authOptions: AuthOptions = {
   pages: {
     signIn: "/login",
     error: "/login",
   },
   session: {
-    strategy: "jwt",
+    strategy: "jwt" as SessionStrategy,
     maxAge: 30 * 24 * 60 * 60,
   },
   providers: [
@@ -72,4 +73,5 @@ export async function getServerSession() {
   return originalGetServerSession(authOptions);
 }
 
-export { authOptions as default };
+const handler = NextAuth(authOptions);
+export { handler as GET, handler as POST, handler as auth };

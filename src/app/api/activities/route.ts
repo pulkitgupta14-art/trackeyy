@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth";
+import { auth } from "@/lib/auth-helper";
 import { prisma } from "@/lib/prisma";
 import { createActivitySchema, workoutSchema, studySessionSchema } from "@/lib/validation/activity";
 import { NextResponse } from "next/server";

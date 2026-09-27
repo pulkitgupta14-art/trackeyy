@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth";
+import { auth } from "@/lib/auth-helper";
 import { prisma } from "@/lib/prisma";
 import { createGoalSchema } from "@/lib/validation/goal";
 import { NextResponse } from "next/server";

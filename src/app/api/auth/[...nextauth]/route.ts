@@ -1,3 +1,5 @@
-import { handler } from "@/lib/auth";
+import { GET, POST } from "@/lib/auth";
 
-export { handler as GET, handler as POST };
+export const runtime = "nodejs";
+
+export { GET, POST };

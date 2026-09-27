@@ -1,8 +1,8 @@
-import { auth } from "@/lib/auth";
+import middlewareAuth from "next-auth/middleware";
 import { NextResponse } from "next/server";
 
-export default auth((req) => {
-  const isLoggedIn = !!req.auth;
+export default middlewareAuth((req) => {
+  const isLoggedIn = !!req.nextauth.token;
   const isOnDashboard = req.nextUrl.pathname.startsWith("/dashboard");
   const isOnAuth = req.nextUrl.pathname.startsWith("/login") || req.nextUrl.pathname.startsWith("/register");
   const isOnApi = req.nextUrl.pathname.startsWith("/api");

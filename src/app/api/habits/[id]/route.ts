@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth";
+import { auth } from "@/lib/auth-helper";
 import { prisma } from "@/lib/prisma";
 import { updateHabitSchema } from "@/lib/validation/habit";
 import { NextResponse } from "next/server";

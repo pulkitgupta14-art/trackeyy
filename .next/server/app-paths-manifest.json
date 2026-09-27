@@ -1,1 +1,27 @@
-{}
+{
+  "/_not-found": "app/_not-found.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
+  "/(auth)/register/page": "app/(auth)/register/page.js",
+  "/(dashboard)/activities/page": "app/(dashboard)/activities/page.js",
+  "/(dashboard)/analytics/page": "app/(dashboard)/analytics/page.js",
+  "/(dashboard)/calendar/page": "app/(dashboard)/calendar/page.js",
+  "/(dashboard)/insights/page": "app/(dashboard)/insights/page.js",
+  "/(dashboard)/goals/page": "app/(dashboard)/goals/page.js",
+  "/(dashboard)/settings/page": "app/(dashboard)/settings/page.js",
+  "/(dashboard)/habits/page": "app/(dashboard)/habits/page.js",
+  "/api/activities/route": "app/api/activities/route.js",
+  "/api/goals/route": "app/api/goals/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/(dashboard)/today/page": "app/(dashboard)/today/page.js",
+  "/(dashboard)/page": "app/(dashboard)/page.js",
+  "/api/habits/[id]/completions/[date]/route": "app/api/habits/[id]/completions/[date]/route.js",
+  "/api/habits/[id]/completions/route": "app/api/habits/[id]/completions/route.js",
+  "/api/habits/[id]/route": "app/api/habits/[id]/route.js",
+  "/api/reminders/[id]/route": "app/api/reminders/[id]/route.js",
+  "/api/categories/route": "app/api/categories/route.js",
+  "/api/reminders/route": "app/api/reminders/route.js",
+  "/api/calendar/route": "app/api/calendar/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/analytics/route": "app/api/analytics/route.js",
+  "/api/habits/route": "app/api/habits/route.js"
+}
